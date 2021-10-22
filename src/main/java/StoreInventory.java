@@ -23,6 +23,7 @@ public class StoreInventory {
         superCycleSet.add(item);
       }
     });
+    superCycleSet.forEach(item -> System.out.println("Super Cycle item: " + item));
   }
 
 }
