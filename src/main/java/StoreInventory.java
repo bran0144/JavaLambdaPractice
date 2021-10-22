@@ -14,8 +14,14 @@ public class StoreInventory {
   }
 
   public void printStoreInventory() {
+    myStoreList.forEach(item -> System.out.println("My Store item: " + item));
+  }
+
+  public void collectCycleItems() {
     myStoreList.forEach(item -> {
-      System.out.println("My Store item: " + item);
+      if (item.contains("cycle")) {
+        superCycleSet.add(item);
+      }
     });
   }
 
