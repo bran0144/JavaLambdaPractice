@@ -4,5 +4,7 @@ public class Main {
     storeInventory.printStoreInventory();
     FruitStand fruitStand = new FruitStand();
     fruitStand.printPrices();
+    MultithreadApp multithreadApp = new MultithreadApp();
+    multithreadApp.startThreads();
   }
 }
